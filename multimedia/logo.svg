@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256" role="img" aria-labelledby="title desc">
+  <title id="title">ElectroTech</title>
+  <desc id="desc">Logo con una E estilizada, trazos de circuito y un rayo central.</desc>
+  <defs>
+    <linearGradient id="bg" x1="28" y1="20" x2="228" y2="236" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#0f172a"/>
+      <stop offset="1" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="60" y1="56" x2="198" y2="200" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#22d3ee"/>
+      <stop offset="1" stop-color="#facc15"/>
+    </linearGradient>
+  </defs>
+
+  <rect x="16" y="16" width="224" height="224" rx="52" fill="url(#bg)"/>
+  <rect x="28" y="28" width="200" height="200" rx="42" fill="none" stroke="rgba(255,255,255,0.10)" stroke-width="4"/>
+
+  <path d="M78 78h92" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-width="14"/>
+  <path d="M78 128h70" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-width="14"/>
+  <path d="M78 178h92" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-width="14"/>
+  <path d="M78 78v100" fill="none" stroke="url(#accent)" stroke-linecap="round" stroke-width="14"/>
+
+  <path d="M124 66l-24 58h28l-12 66 44-76h-28l18-48z" fill="#f8fafc" stroke="#22d3ee" stroke-linejoin="round" stroke-width="6"/>
+
+  <circle cx="78" cy="78" r="8" fill="#facc15"/>
+  <circle cx="78" cy="128" r="8" fill="#22d3ee"/>
+  <circle cx="78" cy="178" r="8" fill="#facc15"/>
+  <circle cx="194" cy="78" r="8" fill="#22d3ee"/>
+  <circle cx="194" cy="128" r="8" fill="#facc15"/>
+  <circle cx="194" cy="178" r="8" fill="#22d3ee"/>
+</svg>

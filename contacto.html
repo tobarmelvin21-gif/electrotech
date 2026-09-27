@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contacto - ElectroTech El Salvador</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio.html">
+                <img src="multimedia/logo.svg" alt="Logo ElectroTech" width="40" height="40"
+                    class="d-inline-block align-text-top">
+                ElectroTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target"
+                data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutoriales.html">Tutoriales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descargas.html">Descargas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4">
+        <div class="row justify-content-center">
+            <div class="col-12 col-md-8 col-lg-6">
+                <div class="card shadow-sm">
+                    <div class="card-body p-4">
+                        <h1 class="card-title h3 mb-3">Contáctanos</h1>
+                        <p class="card-text mb-4">Completa el formulario con tus datos.</p>
+
+                        <form action="#" method="post">
+                            <div class="mb-3">
+                                <label for="nombre" class="form-label">Nombre</label>
+                                <input type="text" class="form-control" id="nombre" name="nombre" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="correo" class="form-label">Correo</label>
+                                <input type="email" class="form-control" id="correo" name="correo" required>
+                            </div>
+
+                            <div class="mb-3">
+                                <label for="telefono" class="form-label">Número de teléfono</label>
+                                <input type="tel" class="form-control" id="telefono" name="telefono" inputmode="numeric"
+                                    pattern="[0-9]*" oninput="this.value=this.value.replace(/[^0-9]/g,'')" required>
+                            </div>
+
+                            <button type="submit" class="btn btn-primary">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <audio id="audioFondo" src="multimedia/audio.mp3" loop preload="auto"></audio>
+    <button id="audioToggle" type="button"
+        class="btn btn-sm btn-outline-light position-fixed bottom-0 end-0 m-3 shadow-sm" style="z-index: 1050;">
+        Pausar música
+    </button>
+
+    <script>
+        (function () {
+            const audio = document.getElementById('audioFondo');
+            const button = document.getElementById('audioToggle');
+            const startPlayback = () => audio.play().then(() => {
+                button.textContent = 'Pausar música';
+            }).catch(() => {
+                button.textContent = 'Reproducir música';
+            });
+
+            document.addEventListener('DOMContentLoaded', startPlayback);
+            button.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    button.textContent = 'Pausar música';
+                } else {
+                    audio.pause();
+                    button.textContent = 'Reproducir música';
+                }
+            });
+        })();
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

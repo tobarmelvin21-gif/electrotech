@@ -1,0 +1,29 @@
+/* Archivo: css/estilos.css */
+
+/* Reset básico del Modelo de Cajas */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: #f8f9fa; /* Color de fondo claro y corporativo */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #333333;
+}
+
+main {
+    background-color: #ffffff;
+    padding: 30px; /* Uso de padding (Modelo de cajas) */
+    border-radius: 8px; /* Bordes redondeados */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+    margin-bottom: 50px; /* Uso de margin (Modelo de cajas) */
+}
+
+h1, h2 {
+    color: #0d6efd; /* Azul de Bootstrap para los títulos principales */
+    border-bottom: 2px solid #0d6efd;
+    padding-bottom: 10px;
+    margin-bottom: 20px;
+}

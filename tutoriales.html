@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tutoriales - ElectroTech El Salvador</title>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+
+        <div class="container-fluid">
+
+            <a class="navbar-brand" href="inicio.html">
+
+                <img src="multimedia/logo.svg" alt="Logo ElectroTech" width="40" height="40"
+                    class="d-inline-block align-text-top">
+
+                ElectroTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuNavegacion"
+                aria-controls="menuNavegacion" aria-expanded="false" aria-label="Toggle navigation">
+
+                <span class="navbar-toggler-icon"></span>
+
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="inicio.html">Inicio</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="catalogo.html">Catálogo</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="quienes-somos.html">Quiénes Somos</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" href="tutoriales.html">Tutoriales</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="descargas.html">Descargas</a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+
+                </ul>
+
+                <!-- Buscador -->
+                <form class="d-flex" role="search">
+
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos..."
+                        aria-label="Search">
+
+                    <button class="btn btn-outline-success" type="submit">
+                        Buscar
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </nav>
+
+    <!-- Contenido -->
+    <main class="container mt-5 mb-5">
+
+        <h1 class="mb-3">Tutoriales</h1>
+
+        <p class="text-muted mb-4">
+            Aprende cómo armar una computadora paso a paso.
+        </p>
+
+        <!-- Tarjeta -->
+        <section class="card shadow border-0">
+
+            <div class="card-body p-4">
+
+                <h2 class="h4 mb-3">
+                    Tutorial para armar una PC
+                </h2>
+
+                <!-- IFRAME -->
+                <div class="ratio ratio-16x9">
+
+                    <iframe src="https://www.youtube-nocookie.com/embed/BL4DCEp7blY"
+                        title="Tutorial para armar una computadora" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen>
+                    </iframe>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <!-- Audio -->
+    <audio id="audioFondo" src="multimedia/audio.mp3" loop preload="auto">
+    </audio>
+
+    <!-- Botón audio -->
+    <button id="audioToggle" type="button"
+        class="btn btn-sm btn-outline-light position-fixed bottom-0 end-0 m-3 shadow-sm" style="z-index: 1050;">
+
+        Pausar música
+
+    </button>
+
+    <!-- Script -->
+    <script>
+
+        (function () {
+
+            const audio = document.getElementById('audioFondo');
+            const button = document.getElementById('audioToggle');
+
+            const startPlayback = () => {
+
+                audio.play()
+                    .then(() => {
+
+                        button.textContent = 'Pausar música';
+
+                    })
+                    .catch(() => {
+
+                        button.textContent = 'Reproducir música';
+
+                    });
+
+            };
+
+            document.addEventListener('DOMContentLoaded', startPlayback);
+
+            button.addEventListener('click', () => {
+
+                if (audio.paused) {
+
+                    audio.play();
+                    button.textContent = 'Pausar música';
+
+                } else {
+
+                    audio.pause();
+                    button.textContent = 'Reproducir música';
+
+                }
+
+            });
+
+        })();
+
+    </script>
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

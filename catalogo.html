@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catalogo - ElectroTech El Salvador</title>
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="inicio.html">
+                <img src="multimedia/logo.svg" alt="Logo ElectroTech" width="40" height="40"
+                    class="d-inline-block align-text-top">
+                ElectroTech
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-toggle="target"
+                data-bs-target="#menuNavegacion" aria-controls="menuNavegacion" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="menuNavegacion">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item"><a class="nav-link" href="inicio.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+                    <li class="nav-item"><a class="nav-link" href="quienes-somos.html">Quiénes Somos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="tutoriales.html">Tutoriales</a></li>
+                    <li class="nav-item"><a class="nav-link" href="descargas.html">Descargas</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Buscar productos..."
+                        aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit">Buscar</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container mt-4 mb-5">
+        <h2 class="mb-4">Catálogo Completo de Productos y Especificaciones</h2>
+        <p class="text-muted mb-4">Explora nuestro inventario detallado de hardware, accesorios y computadoras
+            preensambladas.</p>
+
+        <div class="table-responsive shadow-sm">
+            <table class="table table-bordered table-striped table-hover mt-4">
+                <thead class="table-dark text-center align-middle">
+                    <tr>
+                        <th>Categoría General</th>
+                        <th>Sub-Categoría</th>
+                        <th>Marca y Modelo</th>
+                        <th colspan="2">Especificaciones Técnicas Destacadas</th>
+                        <th>Precio (USD)</th>
+                    </tr>
+                </thead>
+                <tbody class="align-middle">
+
+                    <tr>
+                        <td rowspan="12" class="fw-bold bg-light text-center">Componentes Internos</td>
+
+                        <td rowspan="3" class="text-center fw-semibold">Procesadores (CPU)</td>
+                        <td>Intel Core i9-14900K</td>
+                        <td>24 Núcleos, 32 Hilos</td>
+                        <td>Frecuencia hasta 6.0 GHz</td>
+                        <td class="text-end fw-bold">$ 589.00</td>
+                    </tr>
+                    <tr>
+                        <td>AMD Ryzen 9 7950X3D</td>
+                        <td>16 Núcleos, 32 Hilos</td>
+                        <td>Caché 3D V-Cache 144MB</td>
+                        <td class="text-end fw-bold">$ 699.00</td>
+                    </tr>
+                    <tr>
+                        <td>Intel Core i5-13400F</td>
+                        <td>10 Núcleos, 16 Hilos</td>
+                        <td>Frecuencia hasta 4.6 GHz</td>
+                        <td class="text-end fw-bold">$ 210.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="text-center fw-semibold">Tarjetas Gráficas (GPU)</td>
+                        <td>NVIDIA GeForce RTX 4090</td>
+                        <td>24 GB GDDR6X</td>
+                        <td>DLSS 3.0, Ray Tracing</td>
+                        <td class="text-end fw-bold">$ 1,850.00</td>
+                    </tr>
+                    <tr>
+                        <td>AMD Radeon RX 7900 XTX</td>
+                        <td>24 GB GDDR6</td>
+                        <td>Arquitectura RDNA 3</td>
+                        <td class="text-end fw-bold">$ 999.00</td>
+                    </tr>
+                    <tr>
+                        <td>NVIDIA GeForce RTX 4060 Ti</td>
+                        <td>8 GB GDDR6</td>
+                        <td>Ideal para 1080p Ultra</td>
+                        <td class="text-end fw-bold">$ 399.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="text-center fw-semibold">Almacenamiento (SSD/HDD)</td>
+                        <td>Samsung 990 PRO M.2</td>
+                        <td>2 TB NVMe PCIe 4.0</td>
+                        <td>Lectura 7450 MB/s</td>
+                        <td class="text-end fw-bold">$ 185.00</td>
+                    </tr>
+                    <tr>
+                        <td>Crucial MX500 SATA</td>
+                        <td>1 TB SSD 2.5"</td>
+                        <td>Lectura 560 MB/s</td>
+                        <td class="text-end fw-bold">$ 85.00</td>
+                    </tr>
+                    <tr>
+                        <td>Seagate IronWolf HDD</td>
+                        <td>4 TB SATA III</td>
+                        <td>5400 RPM (Para NAS)</td>
+                        <td class="text-end fw-bold">$ 110.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="text-center fw-semibold">Memoria RAM</td>
+                        <td>Corsair Dominator Platinum</td>
+                        <td>32GB (2x16GB) DDR5</td>
+                        <td>6000 MHz, RGB</td>
+                        <td class="text-end fw-bold">$ 180.00</td>
+                    </tr>
+                    <tr>
+                        <td>Kingston FURY Beast</td>
+                        <td>16GB (2x8GB) DDR4</td>
+                        <td>3200 MHz, CL16</td>
+                        <td class="text-end fw-bold">$ 55.00</td>
+                    </tr>
+                    <tr>
+                        <td>G.Skill Trident Z5 RGB</td>
+                        <td>64GB (2x32GB) DDR5</td>
+                        <td>6400 MHz, CL32</td>
+                        <td class="text-end fw-bold">$ 245.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="6" class="fw-bold bg-light text-center">Periféricos y Accesorios</td>
+
+                        <td rowspan="3" class="text-center fw-semibold">Monitores</td>
+                        <td>LG UltraGear 27"</td>
+                        <td>Panel Nano IPS, 1440p</td>
+                        <td>Tasa de refresco 165Hz, 1ms</td>
+                        <td class="text-end fw-bold">$ 350.00</td>
+                    </tr>
+                    <tr>
+                        <td>ASUS ROG Swift 32"</td>
+                        <td>Panel OLED, 4K UHD</td>
+                        <td>Tasa de refresco 240Hz, 0.03ms</td>
+                        <td class="text-end fw-bold">$ 1,200.00</td>
+                    </tr>
+                    <tr>
+                        <td>BenQ ZOWIE 24"</td>
+                        <td>Panel TN, 1080p (eSports)</td>
+                        <td>Tasa de refresco 144Hz, DyAc</td>
+                        <td class="text-end fw-bold">$ 199.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="3" class="text-center fw-semibold">Teclados y Ratones</td>
+                        <td>Logitech G Pro X Superlight</td>
+                        <td colspan="2">Ratón inalámbrico ultraligero (63g), Sensor HERO 25K</td>
+                        <td class="text-end fw-bold">$ 130.00</td>
+                    </tr>
+                    <tr>
+                        <td>Razer Huntsman V2</td>
+                        <td colspan="2">Teclado mecánico con switches ópticos analógicos, RGB</td>
+                        <td class="text-end fw-bold">$ 155.00</td>
+                    </tr>
+                    <tr>
+                        <td>Keychron Q1 Pro</td>
+                        <td colspan="2">Teclado mecánico custom inalámbrico, chasis de aluminio</td>
+                        <td class="text-end fw-bold">$ 199.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="4" class="fw-bold bg-light text-center">Equipos Completos</td>
+
+                        <td rowspan="2" class="text-center fw-semibold">Laptops Corporativas / Gaming</td>
+                        <td>Apple MacBook Pro 16"</td>
+                        <td colspan="2">Chip M3 Max, 36GB Memoria Unificada, 1TB SSD</td>
+                        <td class="text-end fw-bold">$ 3,499.00</td>
+                    </tr>
+                    <tr>
+                        <td>ASUS ROG Zephyrus G14</td>
+                        <td colspan="2">AMD Ryzen 9, 32GB RAM, 1TB SSD, RTX 4070</td>
+                        <td class="text-end fw-bold">$ 1,850.00</td>
+                    </tr>
+
+                    <tr>
+                        <td rowspan="2" class="text-center fw-semibold">PC de Escritorio (Pre-ensambladas)</td>
+                        <td>ElectroTech Workstation Pro</td>
+                        <td colspan="2">Intel Core i7-13700K, 64GB RAM DDR5, 2TB SSD, RTX 4080</td>
+                        <td class="text-end fw-bold">$ 2,950.00</td>
+                    </tr>
+                    <tr>
+                        <td>ElectroTech Office Basic</td>
+                        <td colspan="2">Intel Core i3-12100, 16GB RAM DDR4, 500GB SSD, Gráficos UHD</td>
+                        <td class="text-end fw-bold">$ 450.00</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+    <audio id="audioFondo" src="multimedia/audio.mp3" loop preload="auto"></audio>
+    <button id="audioToggle" type="button"
+        class="btn btn-sm btn-outline-light position-fixed bottom-0 end-0 m-3 shadow-sm" style="z-index: 1050;">
+        Pausar música
+    </button>
+
+    <script>
+        (function () {
+            const audio = document.getElementById('audioFondo');
+            const button = document.getElementById('audioToggle');
+            const startPlayback = () => audio.play().then(() => {
+                button.textContent = 'Pausar música';
+            }).catch(() => {
+                button.textContent = 'Reproducir música';
+            });
+
+            document.addEventListener('DOMContentLoaded', startPlayback);
+            button.addEventListener('click', () => {
+                if (audio.paused) {
+                    audio.play();
+                    button.textContent = 'Pausar música';
+                } else {
+                    audio.pause();
+                    button.textContent = 'Reproducir música';
+                }
+            });
+        })();
+    </script>
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
